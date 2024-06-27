@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(156, 156, 245);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#info {
+    background-color: #fff;
+    width: 12%;
+    /* height: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+#infocontainer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#infocontainer div {
+    display: flex;
+}
+
+#charts {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+#chart1 {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+
+}
+
+
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+#polarAreaChart {
+    background-color: rgb(255, 255, 255);
+    padding-top: 1%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+#polarAreaChart:hover, #chart1:hover, #info:hover {
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.3), 0 22px 40px rgba(0, 0, 0, 0.3);
+}
+
+#logOut{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 10%;
+    height: 5%;
+    background-color: rgb(37, 37, 156);
+    font-size: large;
+}
+
+#logincontainer {
+    /* max-width: 360px; */
+    width: 20%;
+    height: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#loginForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+#loginForm input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+#loginForm button {
+    padding: 10px;
+    color: white;
+    background-color: rgb(37, 37, 156);
+    font-size: large;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+#loginForm button:hover {
+    background-color: #0056b3;
+}
+#error {
+    color: red;
+    font-weight: bold;
+}
+
+#bienvenue{
+    font-size: xx-large;
+}
+
+#container{
+    height: 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
