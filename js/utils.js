@@ -11,7 +11,7 @@ export function HandleLogin() {
         const password = document.getElementById('password').value;
 
         // Encode credentials in Base64 for Basic Auth
-        const credentials = btoa(username + ':' + password);
+        const credentials = btoa(unescape(encodeURIComponent(username + ':' + password)));
 
         // API endpoint from your setup instructions
         const apiUrl = 'https://learn.zone01dakar.sn/api/auth/signin';
